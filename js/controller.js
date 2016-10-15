@@ -1,4 +1,5 @@
-app.controller("homeController",['$scope','$state', function ($scope, $state) {
+(function () {
+    app.controller("homeController",['$scope','$state', function ($scope, $state) {
     var home = this;
     
     home.url = "http://rentomojo.com";
@@ -19,3 +20,6 @@ app.controller("resultController",['$scope', 'UrlService', '$sce', '$state', '$s
   result.data =  UrlService.URL_shorten(result.url);
   
 }]);
+
+})();
+
