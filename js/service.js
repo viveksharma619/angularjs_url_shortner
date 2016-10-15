@@ -1,4 +1,5 @@
-app.service('UrlService', function($resource, $http){
+(function () {
+  app.service('UrlService', function($resource, $http){
   this.URL_shorten = function(url){
     var result;
     
@@ -12,3 +13,5 @@ app.service('UrlService', function($resource, $http){
     
   }
 });
+})();
+
